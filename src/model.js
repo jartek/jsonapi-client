@@ -140,7 +140,7 @@ class Base {
   }
 
   request(method, url, data = {}) {
-    return this.constructor.request(method, url, data);
+    return this.constructor.adapter.request(method, url, data);
   }
 
   _process422Response(response) {
